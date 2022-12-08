@@ -1,0 +1,13 @@
+.cnMainLoaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cnMainLoaderBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}

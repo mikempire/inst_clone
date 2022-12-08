@@ -1,0 +1,43 @@
+.cnDetailedCardRoot {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 2px rgba(0, 0, 0, .2);
+    margin: 20px auto;
+}
+
+.cnUserBadgeRoot {
+    padding: 10px 5px;
+}
+
+.cnDetailedCardImage img{
+    width: 100%;
+}
+
+.cnDetailedCardButtons {
+    padding: 10px 5px 5px;
+}
+
+.cnDetailedCardButtons svg {
+    width: 21px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cnDetailedCardLikes {
+    padding: 5px;
+}
+
+.cnDetailedCardComments {
+    padding: 5px;
+}
+
+.cnDetailedCardOpen {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+}
