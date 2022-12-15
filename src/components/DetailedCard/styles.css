@@ -11,12 +11,21 @@
     padding: 10px 5px;
 }
 
-.cnDetailedCardImage img{
+.cnDetailedCardImage img {
     width: 100%;
 }
 
 .cnDetailedCardButtons {
+    display: flex;
+    align-items: center;
     padding: 10px 5px 5px;
+}
+
+.cnDetailedCardLikesBtn {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
 }
 
 .cnDetailedCardButtons svg {
@@ -40,4 +49,35 @@
     background-color: inherit;
     margin: 0;
     padding: 0;
+}
+
+.cnDetailedCardForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cnDetailedCardText {
+    width: 100%;
+    height: 25px;
+    border: 1px white solid;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.cnDetailedCardSendBtn {
+    border: none;
+    cursor: pointer;
+    background-color: #33bfff;
+    color: white;
+    border-radius: 10px;
+    margin: 0 15px;
+    width: 100px;
+}
+
+.cnDetailedCardSendBtn:active {
+    background-color: #28a9e4;
+}
+
+.error {
+    border: 1px solid red;
 }

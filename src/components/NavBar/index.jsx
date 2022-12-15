@@ -10,7 +10,7 @@ const Navbar = ({
     return (
         <div className="cnNavbarRoot">
             <div className="cnNavbarWrapper">
-                <span>Instagram</span>
+                <a href='/' className='cnNavbarLink'>Instagram</a>
                 <UserBadge nickName={nickName} avatarUrl={avatarUrl} id={id}/>
             </div>
         </div>

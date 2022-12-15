@@ -7,7 +7,7 @@ const Comments = ({
                   }) => {
     return (
         <div className="cnCommentRoot">
-            <span className="cnCommentName">{nickname}: </span>
+            <span className="cnCommentName">{nickname}:&nbsp;</span>
             <span className="cnCommentText">{text}</span>
         </div>
     );

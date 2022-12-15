@@ -1,0 +1,50 @@
+.cnModal {
+    position: absolute;
+    inset: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+}
+.cnModalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(24, 14, 14, 0.75);
+}
+
+.cnModalRoot {
+    display: flex;
+}
+
+.cnModalOverflow {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cnModalImage {
+     width: 600px;
+ }
+
+.cnModalCommentsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 257px;
+    padding-left: 15px;
+}
+
+.cnModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 558px;
+    min-width: 400px;
+}

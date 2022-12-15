@@ -1,7 +1,17 @@
-import {getPhotos} from "./photos";
+import {getPhotosAPI, mutatePhotoAPI} from "./photos";
+import { getUserAPI} from "./users";
+import {getPostsByUserAPI, mutatePostsAPI} from "./postByUser";
 
-export const  api = {
+export const api = {
     photos: {
-        getPhotos
+        getPhotosAPI,
+        mutatePhotoAPI
+    },
+    users: {
+        getUserAPI
+    },
+    postsByUser: {
+        getPostsByUserAPI,
+        mutatePostsAPI
     }
 }

@@ -1,0 +1,15 @@
+.cnUserPageLine {
+    max-width: 930px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infinite-scroll-component {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    margin: 40px auto;
+    overflow: hidden !important;
+}

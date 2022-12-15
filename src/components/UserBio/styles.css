@@ -1,0 +1,46 @@
+.cnUserBioRoot {
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: 20px;
+}
+
+.cnUserBioAvatar {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.cnUserBioNickname {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cnUserBioBtn {
+    cursor: pointer;
+    background-color: inherit;
+    margin-left: 15px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+.cnUserBioInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.cnUserBioRow {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.cnUserBioName {
+    font-weight: 600;
+}
+
+.cnUserBioCount {
+    margin-right: 10px;
+}

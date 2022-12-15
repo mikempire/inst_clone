@@ -1,9 +1,16 @@
-import {GET_PHOTOS_FAILED, GET_PHOTOS_STARTED, GET_PHOTOS_SUCCESS, SET_TOTAL_PHOTOS} from "../actionCreators/photos";
+import {
+    GET_PHOTOS_FAILED,
+    GET_PHOTOS_STARTED,
+    GET_PHOTOS_SUCCESS, MUTATE_PHOTOS_FAILED,
+    MUTATE_PHOTOS_STARTED, MUTATE_PHOTOS_SUCCESS,
+    SET_TOTAL_PHOTOS
+} from "../actionCreators/photos";
 
 const initialState = {
     photos: [],
     isPhotosLoading: true,
-    totalPhotos: 0
+    totalPhotos: 0,
+    isMutateLoading: true
 }
 
 export const photosReducer = (state = initialState, action) => {
@@ -12,23 +19,44 @@ export const photosReducer = (state = initialState, action) => {
             return {
                 ...state,
                 isPhotosLoading: true
-            }
+            };
+
         case GET_PHOTOS_FAILED:
             return {
                 ...state,
                 isPhotosLoading: false
-            }
+            };
+
         case GET_PHOTOS_SUCCESS:
             return {
                 ...state,
                 photos: action.payload,
                 isPhotosLoading: false
-            }
+            };
+
         case SET_TOTAL_PHOTOS:
             return {
                 ...state,
                 totalPhotos: action.payload
-            }
+            };
+
+        case MUTATE_PHOTOS_STARTED:
+            return {
+                ...state,
+                isMutateLoading: true
+            };
+
+        case MUTATE_PHOTOS_SUCCESS:
+            return {
+                ...state,
+                isMutateLoading: false
+            };
+        case MUTATE_PHOTOS_FAILED:
+            // TODO ADD errors
+            return {
+                ...state,
+                isMutateLoading: false
+            };
         default:
             return {
                 ...state

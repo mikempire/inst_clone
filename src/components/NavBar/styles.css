@@ -11,5 +11,14 @@
     align-items: center;
     height: 100%;
     max-width: 1080px;
-    margin: 0 15px;
+    margin: auto;
+}
+
+.cnNavbarWrapper span {
+    margin-left: 5px;
+}
+
+.cnNavbarLink {
+    color: black;
+    text-decoration: none;
 }
